@@ -5,8 +5,6 @@ import random
 from dotenv import load_dotenv
 import requests
 from datetime import datetime, timedelta
-
-
 from tools import generate_otp
 # Load environment variables from .env file
 load_dotenv()
@@ -28,9 +26,9 @@ class OTPVerification(BaseModel):
     to_number: str
     otp: int
 
-# def generate_otp():
-#     """Generates a 4-digit OTP."""
-#     return random.randint(1000, 9999)
+def generate_otp():
+    """Generates a 4-digit OTP."""
+    return random.randint(1000, 9999)
 
 def send_otp_phone(to_number: str):
     """Sends OTP via phone using the Kaleyra API."""
