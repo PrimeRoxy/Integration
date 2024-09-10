@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+redis
+rq
+pydantic
+rq-dashboard-fast
+dotenv
+os
